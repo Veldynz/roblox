@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free Roblox Account Generator</title>
+    <style>
+        body {
+            background-image: url('https://wallpapercave.com/wp/wp8286493.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+        }
+        .container-fluid {
+            padding: 20px;
+            text-align: center;
+        }
+        .box {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+        }
+        .rokkitt {
+            font-family: 'Rokkitt', serif;
+        }
+        .btn-primary {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+        /* Mengubah warna teks "Free Roblox Account" menjadi merah */
+        .box h1 {
+            color: red;
+        }
+        /* Mengubah warna teks yang digenerate menjadi merah */
+        .jumbotron {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="box light-blue-box rokkitt text-center">
+            FREE ROBLOX ACCOUNT
+        </h1>
+        <div class="box light-gray-box rokkitt text-center">
+            <h3>Instructions</h3>
+            <h4>Click the "Generate" Button to Get Free Roblox Account</h4>
+        </div>
+        <h4></h4>
+        <button onclick="generator()" class="btn btn-primary btn-block btn-large">Generate!</button>
+        <h1 class="jumbotron text-center rokkitt" id="name">Your Name Will Appear Here</h1>
+    </div>
+    <script>
+        function generator() {
+            var adjective = ["Excited", "Anxious", "Overweight", "Demonic", "Jumpy", "Misunderstood", "Squashed", "Gargantuan", "Broad", "Crooked", "Curved", "Deep", "Even", "Excited", "Anxious", "Overweight", "Demonic", "Jumpy", "Misunderstood", "Squashed", "Gargantuan", "Broad", "Crooked", "Curved", "Deep", "Even", "Flat", "Hilly", "Jagged", "Round", "Shallow", "Square", "Steep", "Straight", "Thick", "Thin", "Cooing", "Deafening", "Faint", "Harsh", "High-pitched", "Hissing", "Hushed", "Husky", "Loud", "Melodic", "Moaning", "Mute", "Noisy", "Purring", "Quiet", "Raspy", "Screeching", "Shrill", "Silent", "Soft", "Squeaky", "Squealing", "Thundering", "Voiceless", "Whispering"];
+            var randomAdjective = adjective[Math.floor(Math.random() * adjective.length)];
+            var generatedName = randomAdjective;
+            document.getElementById("name").innerHTML = generatedName;
+        }
+    </script>
+</body>
+</html>
